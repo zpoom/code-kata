@@ -1,0 +1,39 @@
+{
+  "name": "poker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src",
+    "build": "mkdir dist && babel src -s -d dist",
+    "dev": "nodemon --exec yarn babel-node -- src/index.js",
+    "lint": "eslint",
+    "test": "jest --watchAll"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@types/lodash": "^4.14.141",
+    "@types/node": "^13.9.2",
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "babel-register": "^6.26.0",
+    "jest": "^26.2.2",
+    "lodash": "^4.17.15",
+    "nodemon": "^2.0.2",
+    "readline": "^1.3.0",
+    "readline-sync": "^1.4.10",
+    "ts-node-dev": "^1.0.0-pre.43",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@babel/preset-typescript": "^7.10.4",
+    "@types/jest": "^26.0.9",
+    "ts-jest": "^26.1.4"
+  }
+}
